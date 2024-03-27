@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <p>super Sale Up to 40% off</p>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="left">
+                <a href="#">Shop</a>
+                <a href="#">Community</a>
+            </div>
+            <div class="middle">
+                <img src="logo.png" alt="Logo" id="logo">
+            </div>
+            <div class="right">
+                <button id="accountBtn"><img src="account.png" alt=""></button>
+                <button id="searchBtn"><img src="Link ⏵ SVG.png" alt=""></button>
+                <button id="cartBtn"><img src="Frame.png" alt=""></button>
+            </div>
+            <div class="dropdown" id="dropdown">
+                <a href="#">Shop</a>
+                <a href="#">Community</a>
+                <button id="accountBtnMobile">Account</button>
+                <button id="searchBtnMobile">Search</button>
+                <button id="cartBtnMobile">Cart</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="poster">
+        <img id="poster" src="Poster.png" alt="">
+        <div class="title-bar">
+            <h2>Stock photos</h2>
+            <p>John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</p>
+            <button>Explore</button>
+        </div>
+    </div>
+
+    <div class="input-area">
+         <input type="text" id="searchInput" placeholder="Enter search term">
+         <button  id="search" onclick="handleSearch()">Search</button>
+    </div>
+
+
+    <section id="initial">
+        <h2>Initial Section</h2>
+        <!-- Initial image will be added dynamically -->
+    </section>
+
+    <h2>Recommended Section</h2>
+    <section id="recommended">
+        <!-- Recommended images will be added dynamically -->
+    </section>
+
+    <h2>Favorites List</h2>
+    <section id="wishlist">
+        <!-- Wishlist images will be added dynamically -->
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
